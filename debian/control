@@ -14,7 +14,6 @@ Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-celluloid-supervision.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-celluloid-supervision.git
 Homepage: https://github.com/celluloid/
-Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-celluloid-supervision
@@ -28,5 +27,10 @@ Depends: bundler,
          ruby-timers (>= 4.0.0),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Celluloid Supervision
- Supervisors, Supervision Groups, and Supervision Trees for Celluloid.
+Breaks: ruby-celluloid (<< 0.17~)
+Replaces: ruby-celluloid (<< 0.17~) 
+Description: Supervision support for Celluloid
+ This gem provides Supervisors, Supervision Groups, and Supervision Trees for 
+ Celluloid. Celluloid is an actor-based concurrent object framework for Ruby.
+ Celluloid provides a simple and natural way to build fault-tolerant 
+ concurrent programs in Ruby
