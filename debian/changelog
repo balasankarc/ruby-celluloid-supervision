@@ -1,0 +1,5 @@
+ruby-celluloid-supervision (0.20.0-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Balasankar C <balasankarc@autistici.org>  Mon, 27 Jul 2015 15:36:06 +0530

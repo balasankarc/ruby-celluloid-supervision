@@ -1,0 +1,32 @@
+Source: ruby-celluloid-supervision
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: bundler,
+               debhelper (>= 7.0.50~),
+               gem2deb,
+               ruby-dotenv,
+               ruby-nenv,
+               ruby-rspec-logsplit (>= 0.1.2),
+               ruby-timers (>= 4.0.0)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-celluloid-supervision.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-celluloid-supervision.git
+Homepage: https://github.com/celluloid/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-celluloid-supervision
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: bundler,
+         ruby | ruby-interpreter,
+         ruby-dotenv,
+         ruby-nenv,
+         ruby-rspec-logsplit (>= 0.1.2),
+         ruby-timers (>= 4.0.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Celluloid Supervision
+ Supervisors, Supervision Groups, and Supervision Trees for Celluloid.
